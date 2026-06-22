@@ -1,0 +1,259 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animated background */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 85%;
+  background: linear-gradient(145deg, #1e272e, #2f3640);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.7);
+}
+
+/* Caption */
+caption {
+  caption-side: top;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 18px;
+  color: #ecf0f1;
+  background: linear-gradient(to right, #6a11cb, #04283a);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Table header */
+thead th {
+  background: linear-gradient(to right, #0f2027, #203a43);
+  color: #ecf0f1;
+  padding: 14px;
+  font-size: 15px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Common cells */
+td,
+th {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #3d3d3d;
+  color: #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+/* Cute alternating rows */
+tbody tr:nth-child(odd) td {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+
+tbody tr:nth-child(even) td {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+/* Hover glow */
+tbody tr:hover td {
+  background: linear-gradient(135deg, #485563, #29323c);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+/* 🟡 Lunch Break — Orange/Gold */
+td[rowspan]:is(:contains("Lunch"), :contains("LUNCH")) {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #2c2c2c;
+  font-weight: bold;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 🟣 Frontend Project — Purple */
+td:has(:not()) {
+  /* fallback selector safety */
+}
+
+td:contains("Frontend"),
+td:contains("FRONTEND") {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(225, 0, 255, 0.6);
+}
+
+/* 🔵 Theory classes — Blue */
+tbody td:not([rowspan]):nth-child(odd) {
+  box-shadow: inset 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* 🟢 Labs / Practical — Green */
+tbody td:nth-child(even):not([rowspan]) {
+  box-shadow: inset 0 0 6px rgba(46, 204, 113, 0.25);
+}
+
+/* Footer */
+tfoot td {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #dcdde1;
+  font-size: 14px;
+  padding: 12px;
+  letter-spacing: 0.6px;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.card {
+  position: relative;
+  width: 350px;
+  background: #020617;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Header */
+.card-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-header p {
+  margin: 5px 0 15px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Album art */
+.album-art {
+  height: 190px;
+  width: 190px;
+  margin: auto;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+/* Content */
+.card-content {
+  text-align: center;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #334155;
+  height: 6px;
+  border-radius: 10px;
+  margin: 20px 0 8px;
+}
+
+.progress {
+  background: #6366f1;
+  width: 33%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Time */
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Footer buttons */
+.card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #475569;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icon-btn.play {
+  background: #6366f1;
+  border: none;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Border beam animation */
+.border-beam {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  animation: beam 6s linear infinite;
+}
+
+.border-beam.red {
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, transparent, red, transparent);
+}
+
+.border-beam.blue {
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, transparent, blue, transparent);
+  animation-delay: 3s;
+}
+
+@keyframes beam {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

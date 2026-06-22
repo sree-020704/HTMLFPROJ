@@ -1,0 +1,237 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(135deg,#f8fbff,#eef6ff,#ffffff);
+    color:#2d3436;
+    line-height:1.7;
+}
+
+/* Header */
+table:first-child{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+table:first-child h3{
+    color:#fff;
+    margin-top:5px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:12px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#38bdf8;
+    text-shadow:0 0 10px #38bdf8;
+}
+
+/* Headings */
+h1{
+    font-size:3rem;
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:20px 0;
+}
+
+h2{
+    color:#1e40af;
+    margin:20px 0;
+}
+
+h3{
+    color:#0f172a;
+}
+
+p{
+    color:#475569;
+}
+
+/* Hero Section */
+pre{
+    white-space:pre-wrap;
+    max-width:900px;
+    margin:auto;
+    color:#555;
+    font-size:1rem;
+}
+
+q{
+    display:inline-block;
+    margin-top:15px;
+    font-size:1.2rem;
+    color:#2563eb;
+    font-weight:600;
+}
+
+/* General Tables */
+table{
+    border-collapse:collapse;
+    border:none;
+}
+
+td{
+    transition:.4s;
+}
+
+/* Statistics */
+center table td{
+    border:none;
+}
+
+center table td:hover{
+    transform:translateY(-8px);
+}
+
+/* Feature Cards */
+#matters + h2 + table td,
+#use + table td,
+#projects + table td{
+    background:white;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    padding:25px;
+}
+
+#matters + h2 + table td:hover,
+#use + table td:hover,
+#projects + table td:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(37,99,235,.2);
+}
+
+/* About HTML Section */
+#abt{
+    margin-top:50px;
+}
+
+img{
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.08);
+}
+
+/* Project Cards */
+a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+    transition:.3s;
+}
+
+a:hover{
+    color:#0ea5e9;
+}
+
+#projects + table td{
+    background:white;
+    border-radius:20px;
+}
+
+#projects + table h3{
+    color:#1e40af;
+}
+
+/* Trainer Section */
+#trainer{
+    color:#2563eb;
+}
+
+#trainer + br + br + h1{
+    font-size:5rem;
+}
+
+#trainer,
+#trainer ~ h3{
+    text-align:center;
+}
+
+table[width="60%"]{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    background:white;
+}
+
+/* CTA Section */
+hr{
+    border:none;
+    height:2px;
+    background:linear-gradient(to right,transparent,#2563eb,transparent);
+    margin:40px auto;
+    width:90%;
+}
+
+a h3{
+    display:inline-block;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    transition:.4s;
+}
+
+a h3:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(37,99,235,.3);
+}
+
+/* Website Showcase */
+table[width="50%"]{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.1);
+}
+
+/* Map */
+iframe{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* Video */
+video{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+/* Section spacing */
+center{
+    padding:35px 15px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f5f9;
+}
